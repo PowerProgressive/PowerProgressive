@@ -903,7 +903,7 @@
     .hero-bg {
       position: absolute;
       inset: 0;
-      background-image: url('hero.jpg');
+      background-image: url('https://placehold.co/1920x1080/gray/white');
       background-size: cover;
       background-position: center;
       opacity: 0.2;
@@ -1095,6 +1095,111 @@
       transform: scale(1.1);
     }
 
+    /* Formulario personalizado */
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 0.75rem;
+      border-radius: 0.375rem;
+      background-color: rgba(31, 41, 55, 0.7);
+      border: 1px solid #374151;
+      color: white;
+      font-size: 1rem;
+    }
+
+    .form-input:focus {
+      outline: none;
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+    }
+
+    .form-select {
+      width: 100%;
+      padding: 0.75rem;
+      border-radius: 0.375rem;
+      background-color: rgba(31, 41, 55, 0.7);
+      border: 1px solid #374151;
+      color: white;
+      font-size: 1rem;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.75rem center;
+      background-size: 1rem;
+    }
+
+    .form-select:focus {
+      outline: none;
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+    }
+
+    .form-textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border-radius: 0.375rem;
+      background-color: rgba(31, 41, 55, 0.7);
+      border: 1px solid #374151;
+      color: white;
+      font-size: 1rem;
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .form-textarea:focus {
+      outline: none;
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+    }
+
+    /* Sección de cuestionario protegido */
+    #password-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      background-color: rgba(17, 24, 39, 0.7);
+      border-radius: 0.75rem;
+      border: 1px solid #1f2937;
+      margin-bottom: 2rem;
+    }
+
+    #questionnaire-section {
+      display: none;
+    }
+
+    .success-message {
+      display: none;
+      background-color: rgba(16, 185, 129, 0.2);
+      border: 1px solid #10b981;
+      color: #ffffff;
+      padding: 1rem;
+      border-radius: 0.375rem;
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    .error-message {
+      display: none;
+      background-color: rgba(239, 68, 68, 0.2);
+      border: 1px solid #ef4444;
+      color: #ffffff;
+      padding: 1rem;
+      border-radius: 0.375rem;
+      margin-top: 1rem;
+      text-align: center;
+    }
+
     /* Responsive Styles */
     @media (min-width: 768px) {
       .mobile-menu-button {
@@ -1156,6 +1261,7 @@
         <a href="#how-it-works" class="hover:text-blue-500 transition-colors">Cómo Funciona</a>
         <a href="#pricing" class="hover:text-blue-500 transition-colors">Precios</a>
         <a href="#faq" class="hover:text-blue-500 transition-colors">FAQ</a>
+        <a href="#questionnaire" class="hover:text-blue-500 transition-colors">Cuestionario</a>
         <a href="#contact" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md transition-colors">Contacto</a>
       </nav>
 
@@ -1176,6 +1282,7 @@
         <a href="#how-it-works" class="hover:text-blue-500 transition-colors">Cómo Funciona</a>
         <a href="#pricing" class="hover:text-blue-500 transition-colors">Precios</a>
         <a href="#faq" class="hover:text-blue-500 transition-colors">FAQ</a>
+        <a href="#questionnaire" class="hover:text-blue-500 transition-colors">Cuestionario</a>
         <a href="#contact" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md transition-colors inline-block">Contacto</a>
       </div>
     </div>
@@ -1417,7 +1524,7 @@
             <div class="absolute inset-0 bg-gradient-to-r from-blue-600-10 to-blue-900-30 rounded-lg"></div>
             <div 
               class="absolute inset-0 rounded-lg" 
-              style="background-image: url('senta.jpg'); background-size: cover; background-position: center;"
+              style="background-image: url('https://placehold.co/800x600/gray/white'); background-size: cover; background-position: center;"
             ></div>
           </div>
         </div>
@@ -1655,6 +1762,115 @@
     </div>
   </section>
 
+  <!-- Cuestionario Section -->
+  <section id="questionnaire" class="section bg-background scroll-reveal">
+    <div class="container">
+      <div class="text-center mb-16">
+        <h2 class="section-title">Cuestionario Personalizado</h2>
+        <div class="section-divider"></div>
+        <p class="text-lg max-w-3xl mx-auto text-white">
+          Completa nuestro cuestionario para recibir un plan de entrenamiento personalizado.
+        </p>
+      </div>
+
+      <div class="max-w-3xl mx-auto">
+        <!-- Sección de contraseña -->
+        <div id="password-section" class="scroll-reveal">
+          <h3 class="text-xl font-bold mb-6 text-center">Área Restringida</h3>
+          <p class="text-white mb-6 text-center">
+            Esta sección está protegida. Ingresa la contraseña para acceder al cuestionario personalizado.
+          </p>
+          <div class="flex flex-col items-center">
+            <div class="form-group w-full max-w-md">
+              <input type="password" id="password-input" class="form-input" placeholder="Ingresa la contraseña">
+            </div>
+            <button id="password-submit" class="btn btn-primary">Acceder</button>
+            <div id="password-error" class="error-message mt-4">Contraseña incorrecta. Inténtalo de nuevo.</div>
+          </div>
+        </div>
+
+        <!-- Sección de cuestionario -->
+        <div id="questionnaire-section" class="scroll-reveal">
+          <h3 class="text-xl font-bold mb-6">Cuestionario para Plan Personalizado</h3>
+          <p class="text-white mb-6">
+            Por favor, completa todos los campos para que podamos crear un plan de entrenamiento adaptado a tus necesidades específicas.
+          </p>
+          
+          <form id="personal-form">
+            <div class="form-group">
+              <label for="nombre" class="form-label">1️⃣ Nombre completo:</label>
+              <input type="text" id="nombre" name="nombre" class="form-input" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="edad" class="form-label">2️⃣ Edad:</label>
+              <input type="number" id="edad" name="edad" class="form-input" required min="16" max="80">
+            </div>
+            
+            <div class="form-group">
+              <label for="altura" class="form-label">3️⃣ Altura (cm):</label>
+              <input type="number" id="altura" name="altura" class="form-input" required min="120" max="220">
+            </div>
+            
+            <div class="form-group">
+              <label for="peso" class="form-label">4️⃣ Peso (kg):</label>
+              <input type="number" id="peso" name="peso" class="form-input" required min="40" max="200">
+            </div>
+            
+            <div class="form-group">
+              <label for="objetivo" class="form-label">5️⃣ Objetivo principal:</label>
+              <select id="objetivo" name="objetivo" class="form-select" required>
+                <option value="">Selecciona una opción</option>
+                <option value="Ganar músculo">Ganar músculo</option>
+                <option value="Perder grasa">Perder grasa</option>
+                <option value="Mantenerse">Mantenerse</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="nivel" class="form-label">6️⃣ Nivel de experiencia en el entrenamiento:</label>
+              <select id="nivel" name="nivel" class="form-select" required>
+                <option value="">Selecciona una opción</option>
+                <option value="Principiante">Principiante</option>
+                <option value="Intermedio">Intermedio</option>
+                <option value="Avanzado">Avanzado</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="dias" class="form-label">7️⃣ ¿Cuántos días puedes entrenar por semana?</label>
+              <select id="dias" name="dias" class="form-select" required>
+                <option value="">Selecciona una opción</option>
+                <option value="2">2 días</option>
+                <option value="3">3 días</option>
+                <option value="4">4 días</option>
+                <option value="5">5 días</option>
+                <option value="6">6 días</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="equipo" class="form-label">8️⃣ ¿Qué equipo tienes disponible?</label>
+              <textarea id="equipo" name="equipo" class="form-textarea" placeholder="Ejemplo: Mancuernas, barra, banco ajustable..." required></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label for="lesiones" class="form-label">9️⃣ ¿Tienes alguna lesión o condición médica que deba tener en cuenta?</label>
+              <textarea id="lesiones" name="lesiones" class="form-textarea" placeholder="Si no tienes ninguna, escribe 'Ninguna'"></textarea>
+            </div>
+            
+            <button type="submit" id="form-submit" class="btn btn-whatsapp w-full">Enviar Información</button>
+          </form>
+          
+          <div id="success-message" class="success-message">
+            ¡Gracias! Tu información ha sido enviada correctamente. Nos pondremos en contacto contigo pronto.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact Section -->
   <section id="contact" class="section bg-background scroll-reveal">
     <div class="container">
@@ -1839,6 +2055,63 @@
     
     // Check on scroll
     window.addEventListener('scroll', checkScroll);
+
+    // Cuestionario con contraseña
+    const passwordSection = document.getElementById('password-section');
+    const questionnaireSection = document.getElementById('questionnaire-section');
+    const passwordInput = document.getElementById('password-input');
+    const passwordSubmit = document.getElementById('password-submit');
+    const passwordError = document.getElementById('password-error');
+    const personalForm = document.getElementById('personal-form');
+    const successMessage = document.getElementById('success-message');
+
+    // Verificar contraseña
+    passwordSubmit.addEventListener('click', () => {
+      if (passwordInput.value === '24365') {
+        passwordSection.style.display = 'none';
+        questionnaireSection.style.display = 'block';
+        passwordError.style.display = 'none';
+      } else {
+        passwordError.style.display = 'block';
+      }
+    });
+
+    // Enviar formulario
+    personalForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      // Recopilar datos del formulario
+      const formData = new FormData(personalForm);
+      let message = 'CUESTIONARIO PROGRESSIVE OVERLOAD:\n\n';
+      
+      message += '1️⃣ Nombre completo: ' + formData.get('nombre') + '\n';
+      message += '2️⃣ Edad: ' + formData.get('edad') + '\n';
+      message += '3️⃣ Altura (cm): ' + formData.get('altura') + '\n';
+      message += '4️⃣ Peso (kg): ' + formData.get('peso') + '\n';
+      message += '5️⃣ Objetivo principal: ' + formData.get('objetivo') + '\n';
+      message += '6️⃣ Nivel de experiencia: ' + formData.get('nivel') + '\n';
+      message += '7️⃣ Días de entrenamiento: ' + formData.get('dias') + '\n';
+      message += '8️⃣ Equipo disponible: ' + formData.get('equipo') + '\n';
+      message += '9️⃣ Lesiones/condiciones: ' + formData.get('lesiones') + '\n';
+        + '\n';
+      message += '9️⃣ Lesiones/condiciones: ' + formData.get('lesiones') + '\n';
+      
+      // Enviar mensaje a WhatsApp
+      const encodedMessage = encodeURIComponent(message);
+      window.open(`https://wa.me/9711133141?text=${encodedMessage}`, '_blank');
+      
+      // Mostrar mensaje de éxito
+      successMessage.style.display = 'block';
+      personalForm.reset();
+      
+      // Ocultar el formulario después de 3 segundos y volver a la sección de contraseña
+      setTimeout(() => {
+        successMessage.style.display = 'none';
+        questionnaireSection.style.display = 'none';
+        passwordSection.style.display = 'flex';
+        passwordInput.value = '';
+      }, 3000);
+    });
   </script>
 </body>
 </html>
